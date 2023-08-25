@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
+
+.container {
+  background-color: #f8f8f7;
+  width: 100%;
+  max-width: 1440px;
+  height: inherit;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+
+/*First part*/
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 30px;
+  margin-left: 147px;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+
+h1 {
+  color: #1d1d1d;
+  font-family: 'Jost', 'sans-serif';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 58px;
+}
+
+p {
+  color: #8c8c8c;
+  font-family: 'Jost', 'sans-serif';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-title {
+  color: #1d1d1d;
+  font-family: 'Jost', 'sans-serif';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 138px 138px 138px;
+  gap: 16px;
+}
+
+.item {
+  border-radius: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  height: 198px;
+}
+
+.voting {
+  background-color: #b4b7ff;
+  background-image: url(/src/assets/vote.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breeds {
+  background-color: #97eab9;
+  background-image: url(/src/assets/breeds.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery {
+  background-color: #ffd280;
+  background-image: url(/src/assets/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-btn {
+  width: 138px;
+  height: 36px;
+  border-radius: 10px;
+  background: #fff;
+
+  color: #ff868e;
+  text-align: center;
+  font-family: 'Jost', 'sans-serif';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  border: none;
+
+  margin-top: 10px;
+}
+
+.menu-item:hover .item {
+  border-color: #fff;
+}
+
+.menu-item:hover .menu-btn {
+  background: #fbe0dc;
+}
+
+.menu-item:active .item {
+  border-color: #fbe0dc;
+}
+
+.menu-item:active .menu-btn {
+  background: #ff868e;
+  color: #fff;
+}

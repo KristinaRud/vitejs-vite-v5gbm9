@@ -1,0 +1,22 @@
+.parent {
+  position: relative;
+  width: 775px;
+  height: 900px;
+}
+.second {
+  width: 775px;
+  height: 900px;
+  background-image: url(/src/assets/pets.svg);
+  position: absolute;
+  z-index: 100;
+}
+
+.third {
+  position: relative;
+  top: 30px;
+  left: 65px;
+  background-color: #fbe0dc;
+  border-radius: 20px;
+  width: 680px;
+  height: 840px;
+}
