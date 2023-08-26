@@ -2,10 +2,10 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="parent">
-      <div className="second"></div>
-      <div className="third"></div>
-    </div>
+    <>
+      <div className="intro"></div>
+      <div className="rectangle"></div>
+    </>
   );
 };
 export default Home;

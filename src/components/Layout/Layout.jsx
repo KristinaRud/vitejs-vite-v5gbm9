@@ -1,9 +1,12 @@
-import { children } from 'react';
 import logo from '../../assets/logo.svg';
+import Navbar from '../Navbar/Navbar';
+import Wrapper from '../Wrapper/Wrapper';
 import './Layout.css';
 
+// eslint-disable-next-line react/prop-types
 const Layout = ({children}) => {
   return(
+    
     <div className="container">
       <div className="first">
         <div className="nav">
@@ -18,24 +21,13 @@ const Layout = ({children}) => {
           </div>
           <div className="menu-section">
             <p className="menu-title">Lets start using The Cat API</p>
-            <div className="menu-list">
-              <div className="menu-item">
-                <div className="item voting"></div>
-                <button className="menu-btn">VOTING</button>
-              </div>
-              <div className="menu-item">
-                <div className="item breeds"></div>
-                <button className="menu-btn">BREEDS</button>
-              </div>
-              <div className="menu-item">
-                <div className="item gallery"></div>
-                <button className="menu-btn">GALLERY</button>
-              </div>
-            </div>
+            <Navbar/>
           </div>
         </div>
       </div>
-      {children}
+      <Wrapper className="wrapper">
+        {children}
+      </Wrapper>      
     </div>
   );
 };

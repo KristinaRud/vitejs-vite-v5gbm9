@@ -1,9 +1,4 @@
-.parent {
-  position: relative;
-  width: 775px;
-  height: 900px;
-}
-.second {
+.intro {
   width: 775px;
   height: 900px;
   background-image: url(/src/assets/pets.svg);
@@ -11,7 +6,7 @@
   z-index: 100;
 }
 
-.third {
+.rectangle {
   position: relative;
   top: 30px;
   left: 65px;
