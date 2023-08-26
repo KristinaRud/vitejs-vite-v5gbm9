@@ -1,0 +1,15 @@
+.wrapper{
+  position: relative;
+  width: 775px;
+  height: 900px;
+}
+
+.wrapper-content{
+    position: relative;
+    top: 30px;
+    left: 65px;
+    border-radius: 20px;
+    width: 640px;
+    height: 730px;
+    padding: 20px;
+}

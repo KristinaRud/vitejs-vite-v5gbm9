@@ -1,0 +1,68 @@
+.menu-list {
+    display: grid;
+    grid-template-columns: 138px 138px 138px;
+    gap: 16px;
+  }
+  
+  .item {
+    border-radius: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    height: 198px;
+  }
+  
+  .voting {
+    background-color: #b4b7ff;
+    background-image: url(/src/assets/vote.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .breeds {
+    background-color: #97eab9;
+    background-image: url(/src/assets/breeds.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .gallery {
+    background-color: #ffd280;
+    background-image: url(/src/assets/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .menu-btn {
+    width: 138px;
+    height: 36px;
+    border-radius: 10px;
+    background: #fff;
+  
+    color: #ff868e;
+    text-align: center;
+    font-family: 'Jost', 'sans-serif';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    border: none;
+  
+    margin-top: 10px;
+  }
+  
+  .menu-item:hover .item {
+    border-color: #fff;
+  }
+  
+  .menu-item:hover .menu-btn {
+    background: #fbe0dc;
+  }
+  
+  .menu-item.active .item {
+    border-color: #fbe0dc;
+  }
+  
+  .menu-item.active .menu-btn {
+    background: #ff868e;
+    color: #fff;
+  }
+  
